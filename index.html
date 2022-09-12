@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <form action="#" onsubmit="calculateTrajectory();">
+        <td>Coefficient of drag: <input id="c_d" type="" step="0.001"></td><br>
+        <td>Air density (kg*m^-3): <input id="rho" type="number" step="0.001"></td><br>
+        <td>Cross-sectional Area (m^2): <input id="A" type="number" step="0.001"></td><br>
+        <td>Angle (deg): <input id="alpha" type="number" step="0.001"></td><br>
+        <td>Mass (kg): <input id="m" type="number" step="0.001"></td><br>
+        <td>Gravity (m*s^-2): <input id="g" type="number" step="0.001"></td><br>
+        <td>Initial Velocity (m*s^-1): <input id="v_0" type="number" step="0.001"></td><br>
+        <td><input type="submit" onclick="calculateTrajectory();"></td><br>
+    </form>
+    <div id="output">
+    </div>
+
+    <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+    <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>
